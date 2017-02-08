@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-plugin-ios-calendar-permission" version="1.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Calendar Permissions</name>
+    <author>Chris Durfee</author>
+    <description>Cordova plugin to add the ios calendar permissions.</description>
+    <keywords>cordova ios calendar permissions</keywords>
+    <license>MIT</license>
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+    <platform name="ios">
+     <config-file target="*-Info.plist" parent="NSCalendarsUsageDescription">
+         <string>Calendar data may be used.</string>
+     </config-file>
+ </platform>
+</plugin>
